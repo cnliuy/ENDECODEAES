@@ -1,4 +1,4 @@
-#AES 加密 解密  
+# AES 加密 解密  
 AES 128 ( AES/CBC/PKCS5PADDING)  
   
 testAES --含中文的加密和解密  
