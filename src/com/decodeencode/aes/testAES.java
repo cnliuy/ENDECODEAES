@@ -2,23 +2,33 @@ package com.decodeencode.aes;
 
 public class testAES {
     /**
-     * AES 含中文的加解密
-     * 操作
+     * AES  
+     * 
      * 
      * */
 	public static void main(String[] args) throws Exception {
 		
 		AesOperation aes = new AesOperation();
-		String content ="我的测试一下 ，，test123";
+		String content ="鎴戠殑娴嬭瘯涓�涓嬶紝锛宼est123";
 		String password = "WJSX111";
-		//加密
-		byte[] br = aes.encrypt_old(content, password) ;
+		// 
+		//byte[] br = aes.encrypt_old(content, password) ;
+		//String jiamiRstpurl = aes.parseByte2HexStr(br);
+		//System.out.println( jiamiRstpurl ); 
+		
+		// 
+		//byte[] br1 = aes.parseHexStr2Byte(jiamiRstpurl);
+		//System.out.println(new String(aes.decrypt_old(br1, password) , "UTF-8"));
+		
+		
+
+		byte[] br = aes.encrypt(content, password) ;
 		String jiamiRstpurl = aes.parseByte2HexStr(br);
 		System.out.println( jiamiRstpurl ); 
 		
-		//解密
+	
 		byte[] br1 = aes.parseHexStr2Byte(jiamiRstpurl);
-		System.out.println(new String(aes.decrypt_old(br1, password) , "UTF-8"));
+		System.out.println(new String(aes.decrypt(br1, password) , "UTF-8"));
 
 	}
 
