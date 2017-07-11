@@ -18,3 +18,8 @@ testAES --含中文的加密和解密
 /.settings/  
 /.classpath  
   
+------------------------------------
+url:  
+  https://github.com/cnliuy/ENDECODEAES.git 
+  
+   
